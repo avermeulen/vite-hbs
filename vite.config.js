@@ -17,7 +17,7 @@ export default {
   plugins: [handlebars({
     
       context : {
-        title : "Andre, Sibu & Thabang",
+        title : "Sibu & Thabang",
         fruits : ["apple", "banana", "orange", "pear", "litchi"]
       }
 

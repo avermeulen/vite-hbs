@@ -14,6 +14,7 @@ import handlebars from 'vite-plugin-handlebars';
 
 
 export default {
+  base: '/vite-hbs/',
   plugins: [handlebars({
     
       context : {

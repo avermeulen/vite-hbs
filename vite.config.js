@@ -1,5 +1,7 @@
 import handlebars from 'vite-plugin-handlebars';
 
+import { defineConfig } from 'vite'
+
 
 // const data = {
 //   '/index.html' : {
@@ -13,7 +15,21 @@ import handlebars from 'vite-plugin-handlebars';
 // }
 
 
-export default {
+// export default {
+  
+// };
+
+
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      // https://rollupjs.org/configuration-options/
+      input : {
+        main: 'index.html',
+        one: 'one.html',
+      }
+    },
+  },
   base: '/vite-hbs/',
   plugins: [handlebars({
     
@@ -29,8 +45,9 @@ export default {
       // }
 
     
-  })]
-};
+  })],
+
+})
 
 
 // {

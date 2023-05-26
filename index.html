@@ -17,5 +17,13 @@
         <li>{{this}}</li>
         {{/each}}
     </ul>
+    <div>
+
+        <a href="one.html">One</a>
+        <a href="/one.html">One</a>
+        <a href="./one.html">One</a>
+        <a href="{{resolve-from-root 'one.html'}}">One</a>
+
+    </div>
 </body>
 </html>
